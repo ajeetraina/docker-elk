@@ -257,3 +257,13 @@ logstash:
   environment:
     LS_JAVA_OPTS: "-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=18080 -Dcom.sun.management.jmxremote.rmi.port=18080 -Djava.rmi.server.hostname=DOCKER_HOST_IP -Dcom.sun.management.jmxremote.local.only=false"
 ```
+
+
+### How shall I push HTTP logs into ELK stack
+
+Let us try pushing Nginx logs into ELK stack with the below command:
+
+```docker run -d --name nginx-with-syslog --log-driver=syslog --log-opt syslog-address=udp://$manager:5000 -p 80:80 nginx:alpine
+```
+
+Browse to http://manager-ip:5601 to see the logs added to Kibana UI.
