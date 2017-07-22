@@ -1,6 +1,5 @@
-# Docker ELK stack
+# Docker Compose, Elastic Search, Logstash & Kibana - All Working Together
 
-[![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Elastic Stack version](https://img.shields.io/badge/ELK-5.5.0-blue.svg?style=flat)](https://github.com/deviantony/docker-elk/issues/146)
 
 Run the latest version of the ELK (Elasticsearch, Logstash, Kibana) stack with Docker and Docker Compose.
 
