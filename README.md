@@ -261,3 +261,7 @@ Let us try pushing Nginx logs into ELK stack with the below command:
 ```docker run -d --name nginx-with-syslog --log-driver=syslog --log-opt syslog-address=udp://$manager:5000 -p 80:80 nginx:alpine```
 
 Browse to http://manager-ip:5601 to see the logs added to Kibana UI.
+
+Example:2
+
+docker run --rm -it --log-driver=gelf --log-opt gelf-address=udp://<managerip>:5000 alpine ping 8.8.8.8
