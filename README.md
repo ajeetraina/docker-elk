@@ -12,11 +12,7 @@ Based on the official Docker images:
 * [logstash](https://github.com/elastic/logstash-docker)
 * [kibana](https://github.com/elastic/kibana-docker)
 
-**Note**: Other branches in this project are available:
 
-* ELK 5 with X-Pack support: https://github.com/deviantony/docker-elk/tree/x-pack
-* ELK 5 in Vagrant: https://github.com/deviantony/docker-elk/tree/vagrant
-* ELK 5 with Search Guard: https://github.com/deviantony/docker-elk/tree/searchguard
 
 ## Contents
 
@@ -44,8 +40,8 @@ Based on the official Docker images:
 
 ### Host setup
 
-1. Install [Docker](https://www.docker.com/community-edition#/download) version **1.10.0+**
-2. Install [Docker Compose](https://docs.docker.com/compose/install/) version **1.6.0+**
+1. Install [Docker](https://www.docker.com/community-edition#/download) version **17.06.0+**
+2. Install [Docker Compose](https://docs.docker.com/compose/install/) version **1.15.0+**
 3. Clone this repository
 
 ### SELinux
